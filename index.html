@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BOT MTA Province</title>
+
+		<!--css file-->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="menu">
+					<h3 class="logo">CL BOT</h3>
+					<div class="hamburger-menu">
+						<div class="bar"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-container">
+				<div class="main">
+					<header>
+						<div class="overlay">
+							<div class="inner">
+								<h2 class="title">BOT for MTA Province</h2>
+								<p>
+									Бот для МТА провинции разработанный фронтенд разработчиком
+									Minor и beckend разработчиком Cl1ck228
+								</p>
+								<button class="btn" onclick="downloadBot()">Скачать Бота</button>
+							</div>
+						</div>
+					</header>
+				</div>
+
+				<div class="shadow one"></div>
+				<div class="shadow two"></div>
+			</div>
+
+			<div class="links">
+				<ul>
+					<li>
+						<a href="http://127.0.0.1:5500/#" style="--i: 0.05s">Home</a>
+					</li>
+					<li>
+						<a
+							href="https://discord.com/users/1062841717184798781/"
+							style="--i: 0.1s"
+							>Contacts</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+		<script>
+			function downloadBot() {
+				const fileName = 'B0tLesopilka.zip';
+				const link = document.createElement('a');
+				link.href = fileName;
+				link.download = fileName;
+				document.body.appendChild(link);
+				link.click();
+				document.body.removeChild(link);
+
+				// Display the notification
+				const passwordNotification = 'Пароль от архива: B0tLes9010';
+				window.alert(passwordNotification);
+			}
+		</script>
+	</body>
+</html>
